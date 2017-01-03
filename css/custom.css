@@ -1,0 +1,178 @@
+@charset 'UTF-8';
+@import url('http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,400italic,600');
+@import url('font-awesome.min.css');
+/*********************************************************************************/
+/* Shake Anim For Main Icon                                                                          */
+/*********************************************************************************/
+
+	@-webkit-keyframes wiggle {
+	    from {-webkit-transform: rotateZ(2deg);}
+	    50% {-webkit-transform: rotateZ(-2deg);}
+	    to {-webkit-transform: rotateZ(2deg);}
+	}
+
+	@keyframes wiggle {
+	    from {transform: rotateZ(2deg);}
+	    50% {transform: rotateZ(-2deg);}
+	    to {transform: rotateZ(2deg);}
+	}	
+
+	.igniteicon:hover,
+	.igniteicon:focus {
+/*	    -webkit-animation-name: wiggle;
+	    -webkit-animation-duration: .4s;
+	    -webkit-animation-iteration-count: 2;
+	    -webkit-animation-timing-function: ease;
+	    animation-name: wiggle;
+	    animation-duration: .4s;
+	    animation-iteration-count: 2;
+	    animation-timing-function: ease;*/
+		background: url('/Ignite/images/igniteiconlarge.png');
+		background-size: cover;
+		background-position: center center;
+	}
+		.igniteicon {
+			display:inline-block
+		}
+
+	/* Pop */
+	@-webkit-keyframes pop {
+	  50% {
+	    -webkit-transform: scale(1.2);
+	    transform: scale(1.2);
+	  }
+
+	  100% {
+	    -webkit-transform: scale(1);
+	    transform: scale(1);
+	  }
+	}
+
+	@keyframes pop {
+	  50% {
+	    -webkit-transform: scale(1.2);
+	    transform: scale(1.2);
+	  }
+
+	  100% {
+	    -webkit-transform: scale(1);
+	    transform: scale(1);
+	  }
+	}
+
+	.pop {
+	  display: inline-block;
+	  -webkit-transform: translateZ(0);
+	  transform: translateZ(0);
+	  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	}
+	.pop:hover, .pop:focus, .pop:active {
+	  -webkit-animation-name: pop;
+	  animation-name: pop;
+	  -webkit-animation-duration: 0.3s;
+	  animation-duration: 0.3s;
+	  -webkit-animation-timing-function: linear;
+	  animation-timing-function: linear;
+	  -webkit-animation-iteration-count: 1;
+	  animation-iteration-count: 1;
+	}
+
+	.igniteicon
+	{
+        -webkit-tap-highlight-color: rgba(255, 255, 255, 0); 
+        -webkit-tap-highlight-color: transparent; 
+	}
+
+	.header-box
+	{
+		background: url('/Ignite/images/dkorangegradient.jpg');
+		background-size: cover;
+		background-attachment: fixed;
+		background-position: center center;
+		margin-bottom: 25px;
+	}
+
+	.header-text
+	{
+		font-size: 15pt;
+		line-height: 1.85em;
+		font-family: 'Source Sans Pro', sans-serif;
+		font-weight: 300;
+	}
+
+	.back-grad
+	{
+		background: url('/Ignite/images/orangegradient.jpg');
+		background-size: cover;
+		background-attachment: fixed;
+		background-position: center center;
+	}
+
+	.circular {
+	  	border:2px solid white;
+		border-radius: 150px;
+		-webkit-border-radius: 150px;
+		-moz-border-radius: 150px;
+		}
+
+	.circular img {
+		opacity: 0;
+		filter: alpha(opacity=0);
+		}
+
+	.flip-container
+	{
+		background: #333;
+		box-shadow: 0 15px 50px rgba(0,0,0,0.6);
+		perspective: 1000;
+
+	}
+
+	.flipper
+	{
+		background: rgba(0, 0, 0, 0.4);
+	}
+
+	.front
+	{
+	    -webkit-transition: opacity 1s ease-in-out;
+	    -moz-transition: opacity 1s ease-in-out;
+	    -ms-transition: opacity 1s ease-in-out;
+	    -o-transition: opacity 1s ease-in-out;
+	     opacity: 1;
+	     font-family: 'Source Sans Pro', sans-serif;
+	}
+
+	.back
+	{
+	    -webkit-transition: opacity 1s ease-in-out;
+	    -moz-transition: opacity 1s ease-in-out;
+	    -ms-transition: opacity 1s ease-in-out;
+	    -o-transition: opacity 1s ease-in-out;
+	     opacity: 0;
+	     font-family: 'Source Sans Pro', sans-serif;
+	}
+
+	.flip-container:hover .flipper
+	{
+	    background: rgba(0, 0, 0, 0.6);
+	}
+
+	.flip-container:hover .front
+	{
+	    -webkit-transition: opacity 1s ease-in-out;
+	    -moz-transition: opacity 1s ease-in-out;
+	    -ms-transition: opacity 1s ease-in-out;
+	    -o-transition: opacity 1s ease-in-out;
+	     opacity: 1;
+	}
+
+	.flip-container:hover .back
+	{
+	    -webkit-transition: opacity 1s ease-in-out;
+	    -moz-transition: opacity 1s ease-in-out;
+	    -ms-transition: opacity 1s ease-in-out;
+	    -o-transition: opacity 1s ease-in-out;
+	     opacity: 1;
+	     font-family: 'Source Sans Pro', sans-serif;
+	}

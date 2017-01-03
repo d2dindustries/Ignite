@@ -1,0 +1,76 @@
+ <!DOCTYPE HTML>
+<!--
+	Helios by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Ignite</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link rel="shortcut icon" href="images/igniteico-icon.ico">
+		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery.dropotron.min.js"></script>
+		<script src="js/jquery.scrolly.min.js"></script>
+		<script src="js/jquery.onvisible.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-layers.min.js"></script>
+		<script src="js/init.js"></script>
+		<script src="js/facebook-sdk.js"></script>
+		<script>
+		$( document ).ready(function() {
+		      $( "#introVid" ).toggle();
+		});
+		</script>
+		<script>
+			function togg(){
+			  $("#introVid").toggle("slow");
+			  $(".overlay").remove();
+			}
+			</script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-desktop.css" />
+			<link rel="stylesheet" href="css/style-noscript.css" />
+		</noscript>
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+	</head>
+	<body class="homepage" style="overflow: hidden">
+			<div align="center">
+			</div>
+			<!-- Header -->
+			<div id="header">
+				<video id="introVid" width="320" height="240" controls>
+				  <source src="images/ignitevideo.mp4" type="video/mp4">
+				  Your browser does not support the video tag.
+				</video>
+
+
+				<!-- Inner -->
+					<div class="inner">
+						<header>
+							<a href="#" onclick="togg()"><img class="igniteicon" src="images/igniteicontransparent.png" height="250" width="250"></a>
+							<h1><a id="logo">Ignite</a></h1>
+							<p>Non-profit organization's need love too</p>
+							<p>Let's keep the fire burning</p>
+							<p><em>Ignite</em> today!</p>
+						</header>
+						<footer>
+							<a class="pop" href="#" onclick="FB.login( function(r){ if(r.authResponse){ window.location.href = 'http://tamerwahba.me/Ignite/ignite.html'; }},{scope: 'email,user_likes,user_friends'});"><img src="images/facebookloginbutton.png" border="0" alt="" width="250px" height="50px"></a>
+						</footer>
+					</div>
+			</div>
+								<!--
+								  Below we include the Login Button social plugin. This button uses
+								  the JavaScript SDK to present a graphical Login button that triggers
+								  the FB.login() function when clicked.
+								  <div id="status">
+								  </div>
+								-->
+
+	</body>
+</html>
